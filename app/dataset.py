@@ -18,9 +18,9 @@ class Labels:
         self.val_size = val_size
         self.random_state = random_state
 
-    def train_test_val_split(self):
-        X = labels.id
-        y = labels.breed
+    def train_val_test_split(self):
+        X = self.labels.id
+        y = self.labels.breed
 
         X_train, X_test, y_train, y_test = train_test_split(
             X,
