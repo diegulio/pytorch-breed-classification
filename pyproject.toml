@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pytorch-breed-classification"
+version = "0.1.0"
+description = "PyTorch Lightning Image Classification Benchmark: Assess top CNN and ViT models on a diverse dataset of 120 dog breeds, cats, and 'none'. A robust framework for pet and more image tasks"
+authors = ["diegulio <diego.machado@usach.cl>"]
+readme = "README.md"
+packages = [{include = "pytorch_breed_classification"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lightning = "^2.1.0"
+timm = "^0.9.7"
+wandb = "^0.15.12"
+torch = "^2.1.0"
+black = "^23.10.0"
+isort = "^5.12.0"
+scikit-learn = "^1.3.1"
+matplotlib = "^3.8.0"
+gradio = "^3.50.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
